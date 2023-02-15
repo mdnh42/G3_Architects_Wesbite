@@ -15,6 +15,10 @@ header{
 section{
     margin: 50px 0px;
 }
+p{
+    font-size: 13px;
+    color: #727272;;
+}
 /* Header */
 .nav-container{
     display: flex;
@@ -91,6 +95,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-bottom: 50px;
 
 }
 .img-container img{
@@ -99,6 +104,7 @@ section{
 }
 .feauture-info{
     padding-left: 20px;
+    
 }
 .feature-title{
     font-size: 35px;
@@ -110,11 +116,69 @@ section{
 .title-color{
     color: #FF900E;
 }
+
+/* Feature History */
+.feature-history{
+    margin-right: 50px;
+}
+.feature-experience{
+    display: flex;
+    width: 1040px;
+    margin: 0 auto;
+    gap: 30px;
+}
+.feature-ex-title
+{
+    border-left: 6px solid #FF900E;
+    padding-left: 10px;
+}
+.ex-part-container{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+.history-img {
+    width: 1350px;
+}
+.history-img img{
+    width: 100%;
+}
+
+.experience_year{
+    background-color: #FF900E;
+    color: white;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.history-img{
+    position: relative;
+}
+
+.experience_year{
+    position: absolute;
+    top: 688px;
+    left: -70px;
+}
+.experience_year{
+    font-size: 900;
+}
+.experience_year p{
+    color: white;
+}
+
+
+
+
 /* Responsive */
 
 /* Small Device */
 @media screen and (max-width:576px) {
-    .nav-container{
+    .nav-container, .feature-experience{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -132,19 +196,30 @@ section{
         margin: 0 auto;
       
     }
+    .feature-experience{
+        width: 100%;
+    }
+    .history-img{
+        width: 77%;
+    }
+    .experience_year{
+        position: absolute;
+        top: 331px;
+        left: -70px;
+    }
     
    
 }
 /* medium Device */
 @media screen and (min-width:577px) and (max-width:776px) {
-    .nav-container{
+    .nav-container, .feature-experience{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 30px;
         
     }  
-    .banner-container
+    .banner-container, .feature-experience
     {
         width: 100%;
     }
@@ -152,5 +227,19 @@ section{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
+
+    .feature-experience{
+        width: 100%;
+    }
+    .history-img{
+        width: 100%;
+    }
+
+    .experience_year{
+        position: absolute;
+        top: 331px;
+        left: -70px;
+    }
+    
    
 }
