@@ -3,3 +3,111 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+/* common Style */
+body{
+    margin: 0 auto;
+   
+}
+header{
+    background-color: #f8ebde;
+    
+}
+/* Header */
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}   
+
+.log-container{
+
+}
+
+.logo{
+    font-size: 35px;
+
+}
+.menus{
+
+}
+.menu-container{
+    display: flex;
+    gap: 30px;
+}
+.menu-container li{
+    list-style: none;
+    font-size: 18px;
+}
+
+/* Banner Style */
+.banner-container{
+    text-align: center;
+    width: 1040px;
+    height: 900px;
+    margin: 0 auto;
+   
+}
+.banner-title
+{
+    font-size: 54px;
+    color: #000000;
+}
+
+.banner-des{
+    font-size: 16px;
+    color: #000000;
+    margin: 20px 0px;
+}
+
+.btn-primary{
+    color: white;
+    border: 0px;
+    padding: 20px 45px;
+    background-color: #FF900E;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 40px 0px;
+
+}
+
+.banner-img{
+    
+}
+.banner-container img{
+    width: 100%;
+}
+
+
+/* Responsive */
+
+/* Small Device */
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }  
+    .banner-container
+    {
+        width: 100%;
+        
+    }
+   
+}
+/* medium Device */
+@media screen and (min-width:577px) and (max-width:776px) {
+    .nav-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }  
+    .banner-container
+    {
+        width: 100%;
+        
+    }
+   
+}
