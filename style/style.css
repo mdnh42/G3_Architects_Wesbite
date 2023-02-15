@@ -12,6 +12,9 @@ header{
     background-color: #f8ebde;
     
 }
+section{
+    margin: 50px 0px;
+}
 /* Header */
 .nav-container{
     display: flex;
@@ -20,17 +23,11 @@ header{
     
 }   
 
-.log-container{
-
-}
-
 .logo{
     font-size: 35px;
 
 }
-.menus{
 
-}
 .menu-container{
     display: flex;
     gap: 30px;
@@ -67,18 +64,52 @@ header{
     background-color: #FF900E;
     border-radius: 10px;
     font-size: 20px;
-    margin: 40px 0px;
+    margin: 20px 0px;
 
 }
 
-.banner-img{
-    
-}
 .banner-container img{
     width: 100%;
+    margin-top: 20px;
+    
 }
 
+/* Feature Style */
 
+.feature-container{
+    margin: 50px 0px;
+    width: 1040px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.img-container{
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+}
+.img-container img{
+    width: 100%;
+    
+}
+.feauture-info{
+    padding-left: 20px;
+}
+.feature-title{
+    font-size: 35px;
+}
+.title-style
+{
+    color: gray;
+}
+.title-color{
+    color: #FF900E;
+}
 /* Responsive */
 
 /* Small Device */
@@ -87,6 +118,7 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 30px;
         
     }  
     .banner-container
@@ -94,6 +126,13 @@ header{
         width: 100%;
         
     }
+    .feature-container, .img-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 0 auto;
+      
+    }
+    
    
 }
 /* medium Device */
@@ -102,12 +141,16 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 30px;
         
     }  
     .banner-container
     {
         width: 100%;
-        
+    }
+    .feature-container, .img-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
    
 }
