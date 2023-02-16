@@ -189,6 +189,11 @@ p {
 }
 
 /* Some Facts Style */
+.some-facts-container h2, p{
+    padding: 0 20px;
+    
+}
+
 .some-facts {
     margin: 150px 0px;
 }
@@ -284,7 +289,7 @@ p {
 
     }
 
-    .banner-container, .facts-box, .sponsor-container{
+    .banner-container, .facts-box, .sponsor-container, .subsribe{
         width: 90%;
 
     }
@@ -297,10 +302,15 @@ p {
 
     }
 
-    .feature-experience, .facts-box, .sponsor-container, .some-facts-container {
+    .sponsor-container, .some-facts-container, .subsribe, .subscribe-container{
         width: 100%;
     }
-
+    .feature-experience{
+        width:83%;
+    }
+    .facts-box{
+        width: 82%;
+    }
     .history-img {
         width: 77%;
     }
@@ -333,7 +343,7 @@ p {
     }
 
     .banner-container,
-    .feature-experience, .facts-box, .some-facts-container{
+    .feature-experience,  .some-facts-container, .subsribe, .subscribe-container{
         width: 100%;
     }
 
@@ -343,8 +353,10 @@ p {
         width: 100%;
         
     }
-    
-    .feature-experience, .facts-box, .sponsor-gallery{
+    .facts-box{
+        width: 86%;
+    }
+    .feature-experience,  .sponsor-gallery, .box{
         width: 100%;
     }
 
@@ -362,4 +374,9 @@ p {
         padding: 20px;
     }
 
+}
+
+
+.hide{
+    display: none;
 }
