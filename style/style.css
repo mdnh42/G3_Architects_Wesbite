@@ -235,7 +235,9 @@ p {
     justify-content: space-around;
     
 }
-
+.sponsor-gallery img{
+    filter: grayscale(100%);
+}
 
 /* Foooter */
 .footer{
@@ -250,6 +252,22 @@ p {
     margin: 0 auto;
 }
 
+/* Subcribe */
+.subsribe{
+    text-align: center;
+}
+.subscribe-container{
+    width: 1040px;
+    margin: 0 auto;
+    
+}
+.subscribe-container input{
+    padding: 20px 50px;
+    border: 0px;
+    
+}
+
+
 
 
 /* Responsive */
@@ -258,7 +276,7 @@ p {
 @media screen and (max-width:576px) {
 
     .nav-container,
-    .feature-experience , .facts-box{
+    .feature-experience , .facts-box, .sponsor-gallery{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -266,8 +284,8 @@ p {
 
     }
 
-    .banner-container, .facts-box{
-        width: 100%;
+    .banner-container, .facts-box, .sponsor-container{
+        width: 90%;
 
     }
 
@@ -279,7 +297,7 @@ p {
 
     }
 
-    .feature-experience, .facts-box {
+    .feature-experience, .facts-box, .sponsor-container, .some-facts-container {
         width: 100%;
     }
 
@@ -292,7 +310,13 @@ p {
         top: 331px;
         left: -70px;
     }
-
+    .sponsor-gallery img{
+            padding: 20px;
+    }
+    .footer-container{
+        width: 80%;
+        padding: 20px;
+    }
 
 }
 
@@ -300,7 +324,7 @@ p {
 @media screen and (min-width:577px) and (max-width:776px) {
 
     .nav-container,
-    .feature-experience, .facts-box {
+    .feature-experience, .facts-box, .sponsor-gallery{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -309,7 +333,7 @@ p {
     }
 
     .banner-container,
-    .feature-experience, .facts-box {
+    .feature-experience, .facts-box, .some-facts-container{
         width: 100%;
     }
 
@@ -317,13 +341,14 @@ p {
     .img-container {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+        
     }
-
-    .feature-experience, .facts-box {
+    
+    .feature-experience, .facts-box, .sponsor-gallery{
         width: 100%;
     }
 
-    .history-img {
+    .history-img, .sponsor-gallery {
         width: 100%;
     }
 
@@ -332,6 +357,9 @@ p {
         top: 331px;
         left: -70px;
     }
-
+    .footer-container{
+        width: 100%;
+        padding: 20px;
+    }
 
 }
