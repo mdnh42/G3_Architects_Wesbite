@@ -278,7 +278,7 @@ p {
 /* Responsive */
 
 /* Small Device */
-@media screen and (max-width:576px) {
+@media only screen and (max-width: 688px) {
 
     .nav-container,
     .feature-experience , .facts-box, .sponsor-gallery{
@@ -297,8 +297,9 @@ p {
     .feature-container,
     .img-container {
         grid-template-columns: repeat(1, 1fr);
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
+        padding: 20px;
 
     }
 
@@ -331,7 +332,7 @@ p {
 }
 
 /* medium Device */
-@media screen and (min-width:577px) and (max-width:776px) {
+@media only screen and (min-width:689px) and (max-width:992px) {
 
     .nav-container,
     .feature-experience, .facts-box, .sponsor-gallery{
@@ -376,7 +377,3 @@ p {
 
 }
 
-
-.hide{
-    display: none;
-}
